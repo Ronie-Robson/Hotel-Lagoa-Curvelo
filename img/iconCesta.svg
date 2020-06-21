@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW 2020 (64 Bit) -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="49px" height="37px" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 8.699 6.585"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <font id="FontID0" horiz-adv-x="666" font-variant="normal" style="fill-rule:nonzero" font-weight="400">
+	<font-face 
+		font-family="Arial">
+		<font-face-src>
+			<font-face-name name="Arial"/>
+		</font-face-src>
+	</font-face>
+   <missing-glyph><path d="M0 0z"/></missing-glyph>
+   <glyph unicode="1" horiz-adv-x="556" d="M371.986 0l-87.9709 0 0 560.342c-21.1766,-20.3604 -49.0111,-40.5061 -83.3318,-60.6947 -34.3636,-20.1457 -65.3338,-35.3086 -92.6959,-45.317l0 85.007c49.1829,22.9807 92.1804,50.987 128.992,83.9761 36.855,32.8602 63.0143,64.6895 78.3491,95.6597l56.657 0 0 -718.973z"/>
+   <glyph unicode="h" horiz-adv-x="556" d="M65.9782 0l0 715.966 88.0138 0 0 -257.641c40.8498,47.8513 92.3522,71.6481 154.679,71.6481 38.1436,0 71.3045,-7.47409 99.6545,-22.637 28.1782,-15.1629 48.3238,-35.9959 60.48,-62.6707 12.1991,-26.6748 18.1698,-65.5057 18.1698,-116.192l0 -328.473 -87.9709 0 0 328.173c0,43.8136 -9.49295,75.8147 -28.35,95.8315 -18.9859,19.9739 -45.6607,29.9823 -80.325,29.9823 -25.8157,0 -50.1709,-6.65795 -72.9797,-20.1457 -22.8518,-13.5307 -39.0027,-31.8293 -48.8393,-55.0247 -9.66477,-22.9807 -14.5186,-54.81 -14.5186,-95.4879l0 -283.328 -88.0138 0z"/>
+  </font>
+  <style type="text/css">
+   <![CDATA[
+    @font-face { font-family:"Arial";font-variant:normal;font-weight:normal;src:url("#FontID0") format(svg)}
+    .fil0 {fill:red}
+    .fil1 {fill:white}
+    .fnt0 {font-weight:normal;font-size:3.259px;font-family:'Arial'}
+   ]]>
+  </style>
+ </defs>
+ <g id="Camada_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <path class="fil0" d="M0.596 2.387l0.511 -2.202 2.578 0 0 -0.185 1.537 0 0 0.185 2.285 0 0.623 2.202 -0.278 0 -0.632 -1.99 -1.998 0 0 0.232 -1.537 0 0 -0.232 -2.28 0 -0.52 1.99 -0.289 0zm7.533 0.154c0.749,0 0.77,0.691 0,0.691l-0.622 2.287c-0.153,0.565 -0.892,1.066 -1.066,1.066l-4.267 0c-0.586,0 -0.939,-0.494 -1.067,-1.066l-0.511 -2.287c-0.834,0 -0.754,-0.691 0,-0.691l7.533 0z"/>
+  <text x="2.474" y="5.588"  class="fil1 fnt0">1h</text>
+ </g>
+</svg>

@@ -1,0 +1,225 @@
+@charset "UTF-8";
+
+/*---------------------------------------RESET-------------------------------*/
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+textarea:focus, input:focus, select:focus { /* REMOVE SOMBRA DE BORDAS */
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+button:active, button:focus {
+	box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+body {
+	width: 100%;
+	background-color:  #eeeded;
+	margin: 0;
+	padding: 0;
+}
+/*------------------------------------INTERFACE------------------------------*/
+#interface {
+	width: 98%;
+	background: #ffffff;
+	margin: 2px auto;
+}
+.topo {
+	width: 100%;
+	height: 10px;
+	background-color: rgba(0, 0, 0, 0.6);
+	margin-top: -110px;
+	margin-left: -1%;
+	z-index: 9999;
+	position: fixed;
+}
+header {
+	width: 100%;
+	background-color: #ffffff;
+	margin-top: -105px;
+	margin-left: -1%;
+	float: left;
+	z-index: 9999;
+	position: fixed;
+}
+
+/*Limpa flutuação do header*/
+.clear {
+	clear: both;
+}
+.containnerHeader {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
+	padding: 1rem 4rem;
+}
+#busca {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+div #busca > input {
+	border: 1px solid rgba(255, 50, 51, 1) ;
+	border-radius: 1px;
+	height: 1.35em;
+}
+div#busca > button {
+	margin-top: 3px;
+	border: none;
+}
+div#busca > button:hover {
+	cursor: pointer;
+}
+.itenLogin {
+	width: 225px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+@media only screen and (max-width: 500px) { /*----------------Abaixo de 500px---------------------*/
+	.itenLogin {
+	width: 160px;
+	}
+}
+.containerLogin {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.containerLogin img {
+	width: 35px;
+}
+@media only screen and (max-width: 500px) { /*----------------Abaixo de 500px---------------------*/
+	.containerLogin img {
+		width: 20px;
+	}
+}
+.itenLogin p.login {
+	color: rgba(255, 50, 51, 1);
+	margin-left: 10px;
+	margin-right: -5px;
+	font-size: 1em;
+}
+.itenLogin p.login:hover {
+	color: #c31b28;
+}
+@media only screen and (max-width: 500px) { /*----------------Abaixo de 500px---------------------*/
+	.itenLogin p.login {
+	margin-left: 6px;
+	margin-right: -2px;
+	font-size: 0.75em;
+	}
+}
+.itenLogin p.paragrafo {
+	color: gray;
+	font-size: 1em;
+}
+@media only screen and (max-width: 500px) { /*----------------Abaixo de 500px---------------------*/
+	.itenLogin p.paragrafo {
+		font-size: 0.75em;
+		margin-left: 6px;
+	}
+}
+.itenLogin a.cadastro {
+	color: rgba(255, 50, 51, 1);
+	margin-left: -3px;
+	margin-right: 6px;
+	font-size: 1em;
+}
+@media only screen and (max-width: 500px) { /*----------------Abaixo de 500px---------------------*/
+	.itenLogin a.cadastro {
+		font-size: 0.75em;
+		margin-left: -1px;
+		margin-right: 3px;
+	}
+}
+.itenLogin a.cadastro:hover {
+	color: #c31b28;
+}
+/*-----------------------------------------------Carrinho-----------------------------------------*/
+.carrinho {
+	width: 150px;
+	color: rgba(255, 50, 51, 1);
+	text-align: center;
+}
+@media only screen and (max-width: 900px) { /*----------------Abaixo de 500px---------------------*/
+	.carrinho img {
+		width: 15%;
+	}
+}
+.carrinho h3 {
+	text-transform: uppercase;
+	font-size: 1.2em;
+	margin-bottom: 3px;
+}
+@media only screen and (max-width: 900px) { /*----------------Abaixo de 500px---------------------*/
+	.carrinho h3 {
+	font-size: .95em;
+	}
+}
+.containnerCarrinho {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.containnerCarrinho input {
+	border: 1px solid rgba(255, 50, 51, 1);
+	border-radius: 2px;
+	outline: 0;
+	}
+}
+#cCarrinho {
+	margin-left: -25px;
+}
+.containerTexto {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.containerTexto > .tele {
+	font-size: .75em;
+	color: rgb(165, 164, 164);
+}
+.containerTexto > .tel {
+	font-size: .8em;
+	font-weight: bold;
+	color: #eeeded;
+	color: rgba(255, 50, 51, 1);
+}
+@media only screen and (max-width: 900px) { /*----------------Abaixo de 500px---------------------*/
+	.containerTexto > .tel {
+	font-size: .7em;
+	}
+}
+
+/*-----------------------------------------------Carroussel---------------------------------------*/
+.carroussel {
+	width: 100%;
+	margin-top:110px;
+}
+.carroussel img {
+	width: 100%;
+	margin-top: 69.5px;
+}
+@media only screen and (max-width: 900px) { /*----------------Abaixo de 900px---------------------*/
+	.carroussel img {
+		width: 100%;
+		margin-top: 70px;
+	}
+}
+@media only screen and (max-width: 500px) { /*----------------Abaixo de 500px---------------------*/
+.carroussel img {
+	width: 100%;
+	margin-top: 127px;
+}
+}
