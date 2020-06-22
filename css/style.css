@@ -41,7 +41,7 @@ body {
 	z-index: 9999;
 	position: fixed;
 }
-header {
+header.principal {
 	width: 100%;
 	background-color: #ffffff;
 	margin-top: -105px;
