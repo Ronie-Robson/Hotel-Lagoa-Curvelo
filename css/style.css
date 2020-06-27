@@ -1,14 +1,13 @@
 @charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
 
-/*---------------------------------------RESET-------------------------------*/
-*{
-	margin: 0;
-	padding: 0;
-	font-family: Arial, Helvetica, sans-serif;
 }
-
 a {
-	text-decoration: none;
+    text-decoration: none;
 }
 textarea:focus, input:focus, select:focus { /* REMOVE SOMBRA DE BORDAS */
     box-shadow: 0 0 0 0;
@@ -20,65 +19,64 @@ button:active, button:focus {
     border: 0 none;
     outline: 0;
 }
+* ::-webkit-input-placeholder { /*Altera a cor do texto da input*/
+    color:rgb(202, 201, 201); 
+ }
 body {
-	width: 100%;
-	background-color:  #eeeded;
-	margin: 0;
-	padding: 0;
-}
-/*------------------------------------INTERFACE------------------------------*/
-#interface {
-	width: 98%;
-	background: #ffffff;
-	margin: 2px auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
 }
 .topo {
-	width: 100%;
-	height: 10px;
-	background-color: rgba(0, 0, 0, 0.6);
-	margin-top: -110px;
-	margin-left: -1%;
-	z-index: 9999;
-	position: fixed;
+    width: 100%;
+    height: 10%;
+    background-color: #ffffff;
+    float: left;
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    padding-top: 10px;
+    padding-bottom: 20px; 
+    margin: 0 auto;
+    box-shadow: 0 2px 3px rgba(0, 0, 0,0.3);
 }
-header.principal {
-	width: 100%;
-	background-color: #ffffff;
-	margin-top: -105px;
-	margin-left: -1%;
-	float: left;
-	z-index: 9999;
-	position: fixed;
+@media only screen and (max-width: 739px) {
+.topo {
+        height: 20%;
 }
-
-/*Limpa flutuação do header*/
-.clear {
-	clear: both;
 }
-.containnerHeader {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
-	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
-	padding: 1rem 4rem;
+.topo > .container {
+    width: 90%;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.topo > .container img{  /*logo*/
+    display: block;
+    height: 90px;
 }
 #busca {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+    display: flex;
+    align-items: center;
 }
-div #busca > input {
-	border: 1px solid rgba(255, 50, 51, 1) ;
+#busca input {
+    border: 1px solid rgba(255, 50, 51, 0.5) ;
 	border-radius: 1px;
-	height: 1.35em;
+    height: 1.35em;
 }
-div#busca > button {
-	margin-top: 3px;
-	border: none;
+#busca button {
+    background-color: rgba(255, 255, 255, 0.001);
+    border: none;
+    cursor: pointer;
+    margin-left: -1px;
 }
-div#busca > button:hover {
-	cursor: pointer;
+#busca button img {
+    width: 40%;
 }
 .itenLogin {
 	width: 225px;
@@ -89,7 +87,7 @@ div#busca > button:hover {
 @media only screen and (max-width: 500px) { /*----------------Abaixo de 500px---------------------*/
 	.itenLogin {
 	width: 160px;
-	}
+}
 }
 .containerLogin {
 	display: flex;
@@ -111,7 +109,8 @@ div#busca > button:hover {
 	font-size: 1em;
 }
 .itenLogin p.login:hover {
-	font-weight: bold;
+    color: blue;
+    transition: 0.5s;
 }
 @media only screen and (max-width: 500px) { /*----------------Abaixo de 500px---------------------*/
 	.itenLogin p.login {
@@ -121,7 +120,7 @@ div#busca > button:hover {
 	}
 }
 .itenLogin p.paragrafo {
-	color: gray;
+	color: rgb(167, 167, 167);
 	font-size: 1em;
 }
 @media only screen and (max-width: 500px) { /*----------------Abaixo de 500px---------------------*/
@@ -144,104 +143,115 @@ div#busca > button:hover {
 	}
 }
 .itenLogin a.cadastro:hover {
-	font-weight: bold;
-}
-/*-----------------------------------------------Carrinho-----------------------------------------*/
-.carrinho {
-	width: 150px;
-	color: rgba(255, 50, 51, 1);
-	text-align: center;
-}
-@media only screen and (max-width: 900px) { /*----------------Abaixo de 500px---------------------*/
-	.carrinho img {
-		width: 15%;
-	}
-}
-.carrinho h3 {
-	text-transform: uppercase;
-	font-size: 1.2em;
-	margin-bottom: 3px;
-}
-@media only screen and (max-width: 900px) { /*----------------Abaixo de 500px---------------------*/
-	.carrinho h3 {
-	font-size: .95em;
-	}
-}
-.containnerCarrinho {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-}
-.containnerCarrinho input {
-	border: 1px solid rgba(255, 50, 51, 1);
-	border-radius: 2px;
-	outline: 0;
-	}
-}
-#cCarrinho {
-	margin-left: -25px;
-}
-.containerTexto {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-}
-.containerTexto > .tele {
-	font-size: .75em;
-	color: rgb(165, 164, 164);
-}
-.containerTexto > .tel {
-	font-size: .8em;
-	font-weight: bold;
-	color: #eeeded;
-	color: rgba(255, 50, 51, 1);
-}
-@media only screen and (max-width: 900px) { /*----------------Abaixo de 500px---------------------*/
-	.containerTexto > .tel {
-	font-size: .7em;
-	}
+    color: blue;
+    transition: 0.5s;
 }
 
-/*-----------------------------------------------Carroussel---------------------------------------*/
-.carroussel {
-	width: 100%;
-	margin-top:110px;
+@media only screen and (max-width: 739px) {
+.carrinho {
+    margin-left: 56%;
+    margin-top: -100px;
 }
-.carroussel img {
-	width: 100%;
-	margin-top: 69.5px;
 }
-@media only screen and (max-width: 900px) { /*----------------Abaixo de 900px---------------------*/
-	.carroussel img {
-		width: 100%;
-		margin-top: 70px;
-	}
+.carrinho p {
+    color: rgba(255, 50, 51, 1);
+    text-align: center;
 }
-@media only screen and (max-width: 500px) { /*----------------Abaixo de 500px---------------------*/
-.carroussel img {
-	width: 100%;
-	margin-top: 127px;
+.itensCarrinho {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: -25px;
 }
-/*----------------------------------------------Menu Lab------------------------------------------*/
+.itensCarrinho img {
+    width: 30px;
+    margin-right: -50px;
 }
-nav.headerSecond {
-	display: flex;
+.itensCarrinho input {
+    width: 50px;
+    border: 1px solid rgba(255, 50, 51, 0.5);
+}
+.televendas {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: -15px;
+}
+.televendas h3 {
+    font-size: 1em;
+    color: #ffffff;
+    text-shadow: 0.5px 1px 1px rgba(0, 0, 0,0.5);
+    margin-right: 15px;
+    /* -webkit-text-stroke-width: 0.5px;  largura da borda */
+    /* -webkit-text-stroke-color: #000; cor da borda */
+}
+.televendas h4 {
+    font-size: 1em;
+    color: rgba(255, 50, 51, 1);
+}
+/*-------------------------------------------------Banner-----------------------------------------------*/
+main {
+    padding: 0 150px;
+}
+.galeriaBanner {
+    margin-top: 122px;
+    margin-left: -2px;
+    position: relative;
+    overflow: hidden;
+}
+@media only screen and (max-width: 750px) {
+.galeriaBanner {
+    width: 100%;
+    margin-top: 210px;
+}
+}
+.galeriaBanner img {
+    width: 100%;
+}
+
+/*------------------------------------------------Menu------------------------------------------------------*/
+.headerSecond {
+    width: 100%;
+    display: flex;
+    margin: 20px 0;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
-	padding: 2% 0;
 }
-nav.headerSecond >.itenMenu{
+@media only screen and (max-width: 739px) {
+.headerSecond {
+    width: 249%;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: -150px;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+}
+.headerSecond >.itenMenu{
 	width: 250px;
 	margin: 10px;
 	display: flex;
 	justify-content: flex-start;
-	align-items: center;
+    align-items: center;
 }
+@media only screen and (max-width: 739px) {
+.headerSecond >.itenMenu {
+    width: 200px;
+}
+}
+
 .itenMenu p {
 	font-size: .85em;
 	color: rgb(41, 40, 40);
 	padding: 2px;
+}
+@media only screen and (max-width: 739px) {
+.itenMenu p {
+    font-size: .8em;
+}
 }
 .itenMenu a {
 	font-size: 1.25em;
@@ -250,41 +260,52 @@ nav.headerSecond >.itenMenu{
 	font-weight: bolder;
 	font-family: Georgia, 'Times New Roman', Times, serif;
 }
+@media only screen and (max-width: 739px) {
+.itenMenu a {
+    font-size: 0.9em;
+}
+}
 .itenMenu a:hover {
-	color: rgb(255, 0, 0);
-	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2)
+	color: red;
 }
 .itenMenu a img {
-	max-width: 50px;
-	min-width: 40px;
-	margin-left: 2px;
+    max-width: 50px;
+    margin-right: 10px;
 }
-.itenMenu a img:hover {
-	max-width: 55px;
-	transition: .25s;
+@media only screen and (max-width: 739px) {
+.itenMenu a img {
+    max-width: 30px;
+    margin-right: 5px;
 }
-/*---------------------------------------------------Propaganda-------------------------------------*/
+}
+/*-----------------------------------------------Propaganda----------------------------------------------------*/
 .propaganda {
-	width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	align-items: center;
-	margin-bottom: 3%;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+@media only screen and (max-width: 739px) {
+.propaganda {
+    display: block;
+    width: 100%;
+}
 }
 .propaganda img {
-	width: 100%;
+    max-width: 46%;
+    box-shadow: 1px 3px 3px rgba(0, 0, 0,0.8);
 }
-.propaganda>.prop1 , .propaganda>.prop2 {
-	width: 45%;
+@media only screen and (max-width: 750px) {
+.propaganda img {
+    min-width: 100%;
+    margin-top: 10px;
 }
-.propaganda>.prop1 img {
-	box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.6);
-}
-.propaganda>.prop2 img {
-	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
 }
 /*---------------------------------------Ofertas dia-----------------------------------------------*/
+.ofertasDia {
+    margin-top: 40px;
+}
 .tituloProdutos {
 	display: flex;
 	justify-content: space-between;
@@ -842,4 +863,21 @@ p.valor6 {
 	padding: 12px 0;
 	text-align: center;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

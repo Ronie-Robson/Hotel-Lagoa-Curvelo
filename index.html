@@ -1,38 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Drogaria online</title>
-</head>
-<body>
-    <div id="interface">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Drogaria online</title>
+    </head>
 
-        <div class="topo"></div>
+    <body>
+        
+        <div class="topo">
 
-        <header class="principal">
+            <div class="container">
 
-            <div class="containnerHeader">
-
-                <div class="inten">
-                    <a href="#">
-                        <img src="img/iconLogo.svg" alt="">
-                    </a>
-                </div>
+                <img src="img/svg/iconLogo.svg" alt="">
 
                 <form action=" # ">
                     <div id="busca">
-                        <input type="text" id="search" name="search" placeholder=" Busque por seu produto" required>
-                        <button>
-                            <img height="20" src="img/lupalogin.svg" />
+                        <input type="text" id="search" name="busca" placeholder="  Busque por seu produto" required>
+                        <button type="submit">
+                            <img src="img/svg/lupalogin.svg" />
                         </button>
                     </div>
-                  </form>
+                </form>
 
                 <div class="itenLogin">
                     <a href="#" class="containerLogin">
-                        <img src="img/iconLogin.svg" alt="">
+                        <img src="img/svg/iconLogin.svg" alt="">
                         <p class="login">LOGIN</p>
                     </a>
                     <p class="paragrafo">ou</p>
@@ -40,84 +34,77 @@
                 </div>
 
                 <div class="carrinho">
-                    <h3>
-                        seu carrinho
-                    </h3>
-                    <div class="containnerCarrinho">
-                        <img src="img/carrinho.svg" alt=" ">
-                        <input type="text" id="cCarrinho" name="tCarrinho" placeholder="0 itens" size="2" maxlength="3">
+                    <p>Seus Produtos</p>
+                    <div class="itensCarrinho">
+                        <img src="img/svg/carrinho.svg" alt="">
+                        <input type="text" placeholder=" 0 Itens">
                     </div>
-                    <div class="containerTexto">
-                        <p class="tele">Televendas</p>
-                        <p class="tel">0800-0000</p>
+                    <div class="televendas">
+                        <h3>Televendas</h3>
+                        <h4>0800-0000</h4>
                     </div>
                 </div>
-
             </div>
-        </header>
+        </div>
 
-        <div style="clear"> </div>
+        <section class="galeriaBanner">
+            <img src="img/jpg/image1.png" alt="" class="foto">
+         </section>
 
-        <section class="carroussel">
-            <img src="img/image1.png" alt=" ">            
-        </section>
-
-        <header class="second">
-            <nav class="headerSecond">
-
-                <div class="itenMenu">
-                    <a href="#" class="image"><img src="img/iconhome.svg" alt=" "></a>
-                    <div>
-                        <div class="textMenu">
-                            <p>Localize uma de</p>
-                            <a href="#">Nossas Lojas</a>
+        <main>
+            
+                <nav class="headerSecond">
+    
+                    <div class="itenMenu">
+                        <a href="#" class="image"><img src="img/svg/iconhome.svg" alt=" "></a>
+                        <div>
+                            <div class="textMenu">
+                                <p>Localize uma de</p>
+                                <a href="#">Nossas Lojas</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="itenMenu">
-                    <a href="#" class="image"><img src="img/iconLupa.svg" alt=" "></a>
-                    <div>
-                        <div class="textMenu">
-                            <p>Consulte ou Ative</p>
-                            <a href="#">Seus Benefícios</a>
-                            <p>Planos de Saúde, Convênios</p>
+    
+                    <div class="itenMenu">
+                        <a href="#" class="image"><img src="img/svg/iconLupa.svg" alt=" "></a>
+                        <div>
+                            <div class="textMenu">
+                                <p>Consulte ou Ative</p>
+                                <a href="#">Seus Benefícios</a>
+                                <p>Planos de Saúde, Convênios</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="itenMenu">
-                    <a href="#" class="image"><img src="img/iconCesta.svg" alt=" "></a>
-                    <div>
-                        <div class="textMenu">
-                            <p>Compre no Site</p>
-                            <a href="#">Retire na loja</a>
-                            <p>Confira as regras</p>
+    
+                    <div class="itenMenu">
+                        <a href="#" class="image"><img src="img/svg/iconCesta.svg" alt=" "></a>
+                        <div>
+                            <div class="textMenu">
+                                <p>Compre no Site</p>
+                                <a href="#">Retire na loja</a>
+                                <p>Confira as regras</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="itenMenu">
-                    <a href="#" class="image"><img src="img/iconLab.svg" alt=" "></a>
-                    <div>
-                        <div class="textMenu">
-                            <p>Confira nosso Programa</p>
-                            <a href="#">Do Laboratório</a>
-                            <p>Saiba Mais</p>
+    
+                    <div class="itenMenu">
+                        <a href="#" class="image"><img src="img/svg/iconLab.svg" alt=" "></a>
+                        <div>
+                            <div class="textMenu">
+                                <p>Confira nosso Programa</p>
+                                <a href="#">Do Laboratório</a>
+                                <p>Saiba Mais</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </nav>
-        </header>
+                </nav>            
+        </main>
 
         <section class="propaganda">
-            <div class="prop1">
-                <img src="img/promo 1.jpg" alt="">
-            </div>
             
-            <div class="prop2">
-                <img src="img/promo 2.jpg" alt="">
-            </div>
+                <img src="img/jpg/promo 1.jpg" alt="">
+                <img src="img/jpg/promo 2.jpg" alt="">
+           
         </section>
 
         <section class="ofertasDia">
@@ -134,7 +121,7 @@
 
                     <div class="itemImage1">
 
-                        <img src="img/nivea.jpg" alt="">
+                        <img src="img/jpg/nivea.jpg" alt="">
 
                         <div class="itemDescricao1">
                             <h2>Hidratante</h2>
@@ -163,7 +150,7 @@
 
                     <div class="itemImage2">
 
-                        <img src="img/pastilhas.jpg" alt="">
+                        <img src="img/jpg/pastilhas.jpg" alt="">
 
                         <div class="itemDescricao2">
                             <h2>Strepsils</h2>
@@ -192,7 +179,7 @@
 
                     <div class="itemImage3">
 
-                        <img src="img/naldecon.jpg" alt="">
+                        <img src="img/jpg/naldecon.jpg" alt="">
 
                         <div class="itemDescricao3">
                             <h2>Naldecon</h2>
@@ -226,7 +213,7 @@
 
                     <div class="itemImage4">
 
-                        <img src="img/creme.jpg" alt="">
+                        <img src="img/jpg/creme.jpg" alt="">
 
                         <div class="itemDescricao4">
                             <h2>Creme  depilatório</h2>
@@ -249,7 +236,7 @@
                 <div class="produtosItem5">
                     <div class="itemImage5">
 
-                        <img src="img/vichy.jpg" alt="">
+                        <img src="img/jpg/vichy.jpg" alt="">
 
                         <div class="itemDescricao5">
                             <h2>Vichy</h2>
@@ -283,7 +270,7 @@
 
                     <div class="itemImage6">
 
-                        <img src="img/Jontex.jpg" alt="">
+                        <img src="img/jpg/Jontex.jpg" alt="">
 
                         <div class="itemDescricao6">
                             <h2>Jontex</h2>
@@ -320,7 +307,7 @@
 
                     <div class="itemImage2">
 
-                        <img src="img/pastilhas.jpg" alt="">
+                        <img src="img/jpg/pastilhas.jpg" alt="">
 
                         <div class="itemDescricao2">
                             <h2>Strepsils</h2>
@@ -349,7 +336,7 @@
 
                     <div class="itemImage1">
 
-                        <img src="img/nivea.jpg" alt="">
+                        <img src="img/jpg/nivea.jpg" alt="">
 
                         <div class="itemDescricao1">
                             <h2>Hidratante</h2>
@@ -377,7 +364,7 @@
 
                     <div class="itemImage4">
 
-                        <img src="img/creme.jpg" alt="">
+                        <img src="img/jpg/creme.jpg" alt="">
 
                         <div class="itemDescricao4">
                             <h2>Creme  depilatório</h2>
@@ -400,7 +387,7 @@
                 <div class="produtosItem5">
                     <div class="itemImage5">
 
-                        <img src="img/vichy.jpg" alt="">
+                        <img src="img/jpg/vichy.jpg" alt="">
 
                         <div class="itemDescricao5">
                             <h2>Vichy</h2>
@@ -434,7 +421,7 @@
 
                     <div class="itemImage6">
 
-                        <img src="img/Jontex.jpg" alt="">
+                        <img src="img/jpg/Jontex.jpg" alt="">
 
                         <div class="itemDescricao6">
                             <h2>Jontex</h2>
@@ -459,7 +446,7 @@
 
                     <div class="itemImage3">
 
-                        <img src="img/naldecon.jpg" alt="">
+                        <img src="img/jpg/naldecon.jpg" alt="">
 
                         <div class="itemDescricao3">
                             <h2>Naldecon</h2>
@@ -503,7 +490,7 @@
                 <div class="produtosItem5">
                     <div class="itemImage5">
 
-                        <img src="img/vichy.jpg" alt="">
+                        <img src="img/jpg/vichy.jpg" alt="">
 
                         <div class="itemDescricao5">
                             <h2>Vichy</h2>
@@ -537,7 +524,7 @@
 
                     <div class="itemImage6">
 
-                        <img src="img/Jontex.jpg" alt="">
+                        <img src="img/jpg/Jontex.jpg" alt="">
 
                         <div class="itemDescricao6">
                             <h2>Jontex</h2>
@@ -561,7 +548,7 @@
 
                     <div class="itemImage2">
 
-                        <img src="img/pastilhas.jpg" alt="">
+                        <img src="img/jpg/pastilhas.jpg" alt="">
 
                         <div class="itemDescricao2">
                             <h2>Strepsils</h2>
@@ -590,7 +577,7 @@
 
                     <div class="itemImage3">
 
-                        <img src="img/naldecon.jpg" alt="">
+                        <img src="img/jpg/naldecon.jpg" alt="">
 
                         <div class="itemDescricao3">
                             <h2>Naldecon</h2>
@@ -624,7 +611,7 @@
 
                     <div class="itemImage4">
 
-                        <img src="img/creme.jpg" alt="">
+                        <img src="img/jpg/creme.jpg" alt="">
 
                         <div class="itemDescricao4">
                             <h2>Creme  depilatório</h2>
@@ -649,7 +636,7 @@
 
                     <div class="itemImage1">
 
-                        <img src="img/nivea.jpg" alt="">
+                        <img src="img/jpg/nivea.jpg" alt="">
 
                         <div class="itemDescricao1">
                             <h2>Hidratante</h2>
@@ -675,10 +662,6 @@
             </div>
         </section>
 
-        <footer>
-            
-        </footer>
         
-    </div>
-</body>
+    </body>
 </html>
