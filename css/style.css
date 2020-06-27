@@ -41,9 +41,16 @@ body {
     margin: 0 auto;
     box-shadow: 0 2px 3px rgba(0, 0, 0,0.3);
 }
-@media only screen and (max-width: 739px) {
+@media only screen and (max-width: 500px) { /*500px*/
 .topo {
         height: 20%;
+}
+}
+@media only screen and (max-width: 200px) { /*200px*/
+.topo {
+	height: 30%;
+	display: block;
+	float: none;
 }
 }
 .topo > .container {
@@ -69,6 +76,11 @@ body {
 	border-radius: 1px;
     height: 1.35em;
 }
+@media only screen and (max-width: 200px) { /*200px*/
+#busca input {
+	width: 50%;
+}
+}
 #busca button {
     background-color: rgba(255, 255, 255, 0.001);
     border: none;
@@ -89,6 +101,7 @@ body {
 	width: 160px;
 }
 }
+
 .containerLogin {
 	display: flex;
 	justify-content: space-around;
@@ -102,6 +115,7 @@ body {
 		width: 20px;
 	}
 }
+
 .itenLogin p.login {
 	color: rgba(255, 50, 51, 1);
 	margin-left: 10px;
@@ -147,15 +161,17 @@ body {
     transition: 0.5s;
 }
 
-@media only screen and (max-width: 739px) {
+@media only screen and (max-width: 500px) {
 .carrinho {
+	width: 100%;
     margin-left: 56%;
     margin-top: -100px;
 }
 }
 .carrinho p {
     color: rgba(255, 50, 51, 1);
-    text-align: center;
+	text-align: center;
+	font-size: 1em;
 }
 .itensCarrinho {
     display: flex;
@@ -167,9 +183,20 @@ body {
     width: 30px;
     margin-right: -50px;
 }
+@media only screen and (max-width: 200px) { /*200px*/
+.itensCarrinho img {
+	width: 20px;
+}
+}
 .itensCarrinho input {
     width: 50px;
     border: 1px solid rgba(255, 50, 51, 0.5);
+}
+@media only screen and (max-width: 200px) { /*200px*/
+.itensCarrinho input {
+	width: 40px;
+	margin-left: -50px;
+}
 }
 .televendas {
     display: flex;
@@ -177,17 +204,31 @@ body {
     justify-content: space-around;
     margin-top: -15px;
 }
+@media only screen and (max-width: 500px) { /*200px*/
+.televendas {
+	margin-top: -25px;
+}
+}
 .televendas h3 {
     font-size: 1em;
     color: #ffffff;
     text-shadow: 0.5px 1px 1px rgba(0, 0, 0,0.5);
     margin-right: 15px;
-    /* -webkit-text-stroke-width: 0.5px;  largura da borda */
-    /* -webkit-text-stroke-color: #000; cor da borda */
+}
+@media only screen and (max-width: 200px) { /*200px*/
+.televendas h3 {
+	font-size: .75em;
+	margin-right: -40px;
+}
 }
 .televendas h4 {
     font-size: 1em;
     color: rgba(255, 50, 51, 1);
+}
+@media only screen and (max-width: 200px) { /*200px*/
+.televendas h4 {
+	font-size: .75em;
+}
 }
 /*-------------------------------------------------Banner-----------------------------------------------*/
 main {
@@ -218,7 +259,7 @@ main {
 	justify-content: space-between;
 	align-items: center;
 }
-@media only screen and (max-width: 739px) {
+@media only screen and (max-width: 500px) {
 .headerSecond {
     width: 249%;
     display: flex;
@@ -237,7 +278,7 @@ main {
 	justify-content: flex-start;
     align-items: center;
 }
-@media only screen and (max-width: 739px) {
+@media only screen and (max-width: 500px) {
 .headerSecond >.itenMenu {
     width: 200px;
 }
@@ -423,6 +464,7 @@ p.valor2 {
 	color:blue;
 	font-weight: bold;
 }
+
 /*--------------------------------------item 2------------------------------------------*/
 .produtosItem2 {
 	display: block;
