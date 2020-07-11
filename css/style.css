@@ -41,16 +41,9 @@ body {
     margin: 0 auto;
     box-shadow: 0 2px 3px rgba(0, 0, 0,0.3);
 }
-@media only screen and (max-width: 500px) { /*500px*/
+@media only screen and (max-width: 739px) {
 .topo {
         height: 20%;
-}
-}
-@media only screen and (max-width: 200px) { /*200px*/
-.topo {
-	height: 30%;
-	display: block;
-	float: none;
 }
 }
 .topo > .container {
@@ -76,11 +69,6 @@ body {
 	border-radius: 1px;
     height: 1.35em;
 }
-@media only screen and (max-width: 200px) { /*200px*/
-#busca input {
-	width: 50%;
-}
-}
 #busca button {
     background-color: rgba(255, 255, 255, 0.001);
     border: none;
@@ -99,9 +87,8 @@ body {
 @media only screen and (max-width: 500px) { /*----------------Abaixo de 500px---------------------*/
 	.itenLogin {
 	width: 160px;
+	}
 }
-}
-
 .containerLogin {
 	display: flex;
 	justify-content: space-around;
@@ -115,7 +102,6 @@ body {
 		width: 20px;
 	}
 }
-
 .itenLogin p.login {
 	color: rgba(255, 50, 51, 1);
 	margin-left: 10px;
@@ -161,17 +147,15 @@ body {
     transition: 0.5s;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 739px) {
 .carrinho {
-	width: 100%;
     margin-left: 56%;
     margin-top: -100px;
 }
 }
 .carrinho p {
     color: rgba(255, 50, 51, 1);
-	text-align: center;
-	font-size: 1em;
+    text-align: center;
 }
 .itensCarrinho {
     display: flex;
@@ -183,20 +167,9 @@ body {
     width: 30px;
     margin-right: -50px;
 }
-@media only screen and (max-width: 200px) { /*200px*/
-.itensCarrinho img {
-	width: 20px;
-}
-}
 .itensCarrinho input {
     width: 50px;
     border: 1px solid rgba(255, 50, 51, 0.5);
-}
-@media only screen and (max-width: 200px) { /*200px*/
-.itensCarrinho input {
-	width: 40px;
-	margin-left: -50px;
-}
 }
 .televendas {
     display: flex;
@@ -204,31 +177,17 @@ body {
     justify-content: space-around;
     margin-top: -15px;
 }
-@media only screen and (max-width: 500px) { /*200px*/
-.televendas {
-	margin-top: -25px;
-}
-}
 .televendas h3 {
     font-size: 1em;
     color: #ffffff;
     text-shadow: 0.5px 1px 1px rgba(0, 0, 0,0.5);
     margin-right: 15px;
-}
-@media only screen and (max-width: 200px) { /*200px*/
-.televendas h3 {
-	font-size: .75em;
-	margin-right: -40px;
-}
+    /* -webkit-text-stroke-width: 0.5px;  largura da borda */
+    /* -webkit-text-stroke-color: #000; cor da borda */
 }
 .televendas h4 {
     font-size: 1em;
     color: rgba(255, 50, 51, 1);
-}
-@media only screen and (max-width: 200px) { /*200px*/
-.televendas h4 {
-	font-size: .75em;
-}
 }
 /*-------------------------------------------------Banner-----------------------------------------------*/
 main {
@@ -259,7 +218,7 @@ main {
 	justify-content: space-between;
 	align-items: center;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 739px) {
 .headerSecond {
     width: 249%;
     display: flex;
@@ -278,7 +237,7 @@ main {
 	justify-content: flex-start;
     align-items: center;
 }
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 739px) {
 .headerSecond >.itenMenu {
     width: 200px;
 }
@@ -464,7 +423,6 @@ p.valor2 {
 	color:blue;
 	font-weight: bold;
 }
-
 /*--------------------------------------item 2------------------------------------------*/
 .produtosItem2 {
 	display: block;
@@ -905,16 +863,103 @@ p.valor6 {
 	padding: 12px 0;
 	text-align: center;
 }
+/*--------------------------Footer------------------------*/
 
+.containerFooter {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	padding: 15px 0;
+	background-color: #B5ACA6;    
+}
 
+.texto {
+	color: #ffffff;
+	font-size: 1.5em;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.app img {
+	width: 120px;
+	margin-left: 20px;
+}
 
-
-
-
-
-
-
-
+.bgfooter {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+	background: url(../img/svg/fundoFooter.svg) no-repeat center;
+	background-size: cover;
+	padding-top: 30px;
+}
+.containerServicos {
+	display: flex;
+	align-items: initial;
+	justify-content: space-between;
+}
+.servicos {
+	margin-left: 50px;
+	margin-bottom: 15px;
+}
+.vermelho {
+	color: #C31B28;
+}
+.servicos ul {
+	padding: 10px 0;
+}
+.servicos ul li {
+	list-style: none;
+	padding-bottom: 2px;
+}
+.servicos ul li a {
+	color: #666666;
+}
+.texContatos {
+	margin-bottom: 20px;
+}
+.texContatos p {
+	text-align: center;
+	color: #666666;
+	font-size: 1.2em;
+}
+.texContatos ul li {
+	list-style: none;
+	margin-top: 10px;
+	text-align: right;
+}
+.texContatos ul li a {
+	color: #666666;
+	font-size: 1.35em;
+}
+.cartoes {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+	margin: 40px 0;
+}
+.cartoes .img img {
+	width: 80px;
+}
+.anvisa {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.anvisa img {
+	width: 450px;
+	margin: 0 auto;
+}
+.dados {
+	width: 90%;
+	margin: 30px auto;
+	color: #b8b8b8;
+}
+p.detalhes {
+	text-align: justify;
+}
 
 
 
