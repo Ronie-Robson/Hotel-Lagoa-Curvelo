@@ -194,6 +194,8 @@ main {
     padding: 0 150px;
 }
 .galeriaBanner {
+	background: url(../img/svg/fundoTopo.svg) no-repeat center;
+	background-size: cover;
     margin-top: 122px;
     margin-left: -2px;
     position: relative;
@@ -201,12 +203,67 @@ main {
 }
 @media only screen and (max-width: 750px) {
 .galeriaBanner {
-    width: 100%;
-    margin-top: 210px;
+	margin-top: 210px;
 }
 }
-.galeriaBanner img {
-    width: 100%;
+.textoBanner {
+	margin-top: 30px;
+	width: 60%;
+	margin-top: -0.3%;
+	margin-left: 24%;
+	margin-bottom: 30px;
+}
+.linha1 {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	justify-content: flex-start;
+	margin-left: 10%;
+	margin-top: 60px;
+}
+.linha1 h2 {
+	color: red;
+	font-size: 5em;
+	font-weight: bold;
+}
+.linha1 p {
+	margin-left: 20px;
+}
+.linha1 p.cinza {
+	color: #929292;
+	font-size: 2.5em;
+}
+.linha1 p.tVermelho {
+	color: red;
+	font-size: 3.5em;
+}
+.linha {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	justify-content: flex-start;
+	margin-left: -60px;
+}
+.linha p {
+	margin-right: 40px;
+}
+.linha p.cinza {
+	color: #929292;
+	font-size: 2.5em;
+}
+.linha p.tVermelho {
+	color: red;
+	font-size: 3.5em;
+}
+.containnerBanner {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+	margin-bottom: 30px;
+}
+.rotulo {
+	margin-left: -150px;
 }
 
 /*------------------------------------------------Menu------------------------------------------------------*/
@@ -242,7 +299,11 @@ main {
     width: 200px;
 }
 }
-
+.itenMenu h2 {
+	color: rgba(255, 50, 51, 1);
+	font-size: 1.75em;
+	margin-right: 10px;
+}
 .itenMenu p {
 	font-size: .85em;
 	color: rgb(41, 40, 40);
@@ -277,6 +338,54 @@ main {
     max-width: 30px;
     margin-right: 5px;
 }
+}
+.textMenu a.voltar {
+	color: rgba(255, 50, 51, 1);
+	font-size: 1.2em;
+}
+@media only screen and (max-width: 739px) {
+.itenMenu a.voltar {
+	font-size: 0.9em;
+}
+}
+.textMenu a.voltar:hover {
+	color: red;
+}
+.maps {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 50px;
+}
+#buscaMapa {
+	display: flex;
+}
+#buscaMapa input {
+	width: 300px;
+    border: 1px solid rgba(255, 50, 51, 0.5) ;
+	border-radius: 1px;
+	height: 1.35em;
+	font-size: 1em;
+}
+#buscaMapa button {
+    background-color: rgba(255, 255, 255, 0.001);
+    border: none;
+    cursor: pointer;
+    margin-left: -20px;
+}
+#buscaMapa button img {
+    width: 48%;
+}
+#local {
+	margin-bottom: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#local iframe {
+	width: 600px;
+	height: 450px;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0,0.6);
 }
 /*-----------------------------------------------Propaganda----------------------------------------------------*/
 .propaganda {
